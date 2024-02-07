@@ -1,0 +1,54 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.list-container {
+  margin: 30px;
+}
+
+.list-container h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.list-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-container ul li {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
