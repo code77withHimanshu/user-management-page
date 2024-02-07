@@ -22,19 +22,19 @@ Provide user-friendly interfaces for managing notifications and user data.
 
 **Installation**:
 
-Clone the repository: **git clone <repository-url>**
+Clone the repository: `git clone <repository-url>`
 
-Navigate to the project directory: **cd <project-directory>**
+Navigate to the project directory: `cd <project-directory>`
 
-Install dependencies: **npm install**
+Install dependencies: `npm install`
 
 **Usage**:
 
-Start the backend server: **node server.js**
+Start the backend server: `node server.js`
 
-Start the frontend development server: **npm start**
+Start the frontend development server: `npm start`
 
-Access the application in your web browser at **http://localhost:3000**
+Access the application in your web browser at `http://localhost:3000`
 
 
 **Technologies Used:**
