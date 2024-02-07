@@ -1,3 +1,5 @@
+I am using MongoDb Atlas and both mock data. I have commented mock data. You can uncomment it and use it as per your need if you don't want to use Mongodb
+
 **Description**:
 
 This project is a web application designed to manage user data and trigger notifications based on specific conditions. It addresses two main scenarios:
