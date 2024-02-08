@@ -8,6 +8,24 @@ const app = express();
 app.use(cors());
 const { MongoClient, ObjectId } = require('mongodb');
 
+
+// Allow requests from your frontend URL
+const allowedOrigins = [
+  'https://user087management.onrender.com',
+  // Add other frontend URLs if needed
+];
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+};
+
+app.use(cors(corsOptions));
+
 // Middleware
 app.use(bodyParser.json());
 
