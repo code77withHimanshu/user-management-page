@@ -24,7 +24,7 @@ Provide user-friendly interfaces for managing notifications and user data.
 
 **Installation**:
 
-Clone the repository: `git clone <repository-url>`
+Clone the repository from master branch: `git clone -b master <repository-url>`
 
 Navigate to the project directory: `cd <project-directory>`
 
