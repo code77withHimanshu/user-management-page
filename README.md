@@ -30,6 +30,10 @@ Navigate to the project directory: `cd <project-directory>`
 
 Install dependencies: `npm install`
 
+Navigate to the client directory: `cd .\client\`
+
+Install dependencies: `npm install`
+
 **Usage**:
 
 Start the backend server: `node server.js`
