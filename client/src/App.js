@@ -13,7 +13,7 @@ const App = () => {
     // Fetch users data from backend API
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/users');
+        const response = await axios.get('https://user-management-agz4.onrender.com/api/users');
         setUsers(response.data);
       } catch (error) {
         console.error('Error fetching users:', error);
@@ -23,7 +23,7 @@ const App = () => {
     fetchUsers();
     const fetchInactiveUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/inactiveusers');
+        const response = await axios.get('https://user-management-agz4.onrender.com/api/inactiveusers');
         setInactiveusers(response.data);
       } catch (error) {
         console.error('Error fetching inactive users:', error);
@@ -33,7 +33,7 @@ const App = () => {
     fetchInactiveUsers();
     const fetchAbandonedUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/abandonedusers');
+        const response = await axios.get('https://user-management-agz4.onrender.com/api/abandonedusers');
         setAbandonedusers(response.data);
       } catch (error) {
         console.error('Error fetching Abandoned users:', error);
@@ -48,7 +48,7 @@ const App = () => {
   const handleInactiveUsersNotification = async () => {
     // Trigger in-app and email notifications for inactive users
     try {
-      await axios.post('http://localhost:5000/api/notifications/inactive-users');
+      await axios.post('https://user-management-agz4.onrender.com/api/notifications/inactive-users');
       alert('Notifications sent to inactive users successfully!');
     } catch (error) {
       console.error('Error sending notifications to inactive users:', error);
@@ -59,7 +59,7 @@ const App = () => {
   const handleAbandonedCourseNotification = async () => {
     // Trigger in-app and email notifications for users who abandoned the checkout process
     try {
-      await axios.post('http://localhost:5000/api/notifications/abandoned-course');
+      await axios.post('https://user-management-agz4.onrender.com/api/notifications/abandoned-course');
       alert('Notifications sent for abandoned courses successfully!');
     } catch (error) {
       console.error('Error sending notifications for abandoned courses:', error);
